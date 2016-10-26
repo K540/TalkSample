@@ -274,4 +274,9 @@ class MessageTalkViewController: JSQMessagesViewController, UINavigationControll
         }
         return nil
     }
+
+    // TODO: CommitSample
+    func sampleFunc() -> boolean {
+    	return true
+    }
 }
