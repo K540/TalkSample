@@ -1,0 +1,16 @@
+PODS:
+  - JSQMessagesViewController (7.3.4):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - SwiftyJSON (2.4.0)
+
+DEPENDENCIES:
+  - JSQMessagesViewController
+  - SwiftyJSON (= 2.4.0)
+
+SPEC CHECKSUMS:
+  JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
+
+COCOAPODS: 0.39.0
