@@ -1,3 +1,2 @@
 # TalkSample
 ｽｸﾞﾆｹｼﾀ
-うygさうぢあ
