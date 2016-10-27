@@ -16,6 +16,13 @@
 		C924CDC51DBDF11F00FA9426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C924CDC31DBDF11F00FA9426 /* LaunchScreen.storyboard */; };
 		C924CDCF1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C924CDCE1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg */; };
 		C924CDD11DBE065D00FA9426 /* april-2560x1440-iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C924CDD01DBE065D00FA9426 /* april-2560x1440-iphone.jpg */; };
+		C9DA04BB1DBEE22B0018FD9A /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04B61DBEE22B0018FD9A /* dog.jpg */; };
+		C9DA04BC1DBEE22B0018FD9A /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04B71DBEE22B0018FD9A /* cat.jpg */; };
+		C9DA04BD1DBEE22B0018FD9A /* piyo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04B81DBEE22B0018FD9A /* piyo.jpg */; };
+		C9DA04BE1DBEE22B0018FD9A /* seal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04B91DBEE22B0018FD9A /* seal.jpg */; };
+		C9DA04BF1DBEE22B0018FD9A /* squirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04BA1DBEE22B0018FD9A /* squirrel.jpg */; };
+		C9DA04C11DBEE78D0018FD9A /* MessageTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA04C01DBEE78D0018FD9A /* MessageTopViewController.swift */; };
+		C9DA04C51DBF13F40018FD9A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA04C41DBF13F40018FD9A /* CustomTableViewCell.swift */; };
 		CCDC9EEE0B7A107A33231247 /* Pods_TalkSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFF057C2FF344CFECCFBC17 /* Pods_TalkSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +73,13 @@
 		C924CDC61DBDF11F00FA9426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C924CDCE1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper_iPhone_001.jpg; sourceTree = "<group>"; };
 		C924CDD01DBE065D00FA9426 /* april-2560x1440-iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "april-2560x1440-iphone.jpg"; sourceTree = "<group>"; };
+		C9DA04B61DBEE22B0018FD9A /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		C9DA04B71DBEE22B0018FD9A /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		C9DA04B81DBEE22B0018FD9A /* piyo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piyo.jpg; sourceTree = "<group>"; };
+		C9DA04B91DBEE22B0018FD9A /* seal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seal.jpg; sourceTree = "<group>"; };
+		C9DA04BA1DBEE22B0018FD9A /* squirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = squirrel.jpg; sourceTree = "<group>"; };
+		C9DA04C01DBEE78D0018FD9A /* MessageTopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTopViewController.swift; sourceTree = "<group>"; };
+		C9DA04C41DBF13F40018FD9A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,12 +138,19 @@
 				C924CDBA1DBDF11F00FA9426 /* AppDelegate.swift */,
 				C924CDBC1DBDF11F00FA9426 /* ViewController.swift */,
 				04BD34AB1DBEEBA700704B4E /* MessageTalkViewController.swift */,
+				C9DA04C01DBEE78D0018FD9A /* MessageTopViewController.swift */,
+				C9DA04C41DBF13F40018FD9A /* CustomTableViewCell.swift */,
 				C924CDBE1DBDF11F00FA9426 /* Main.storyboard */,
 				C924CDC11DBDF11F00FA9426 /* Assets.xcassets */,
 				C924CDC31DBDF11F00FA9426 /* LaunchScreen.storyboard */,
 				C924CDD01DBE065D00FA9426 /* april-2560x1440-iphone.jpg */,
 				C924CDCE1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg */,
 				C924CDC61DBDF11F00FA9426 /* Info.plist */,
+				C9DA04B61DBEE22B0018FD9A /* dog.jpg */,
+				C9DA04B71DBEE22B0018FD9A /* cat.jpg */,
+				C9DA04B81DBEE22B0018FD9A /* piyo.jpg */,
+				C9DA04B91DBEE22B0018FD9A /* seal.jpg */,
+				C9DA04BA1DBEE22B0018FD9A /* squirrel.jpg */,
 			);
 			path = TalkSample;
 			sourceTree = "<group>";
@@ -243,6 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DA04BD1DBEE22B0018FD9A /* piyo.jpg in Resources */,
+				C9DA04BF1DBEE22B0018FD9A /* squirrel.jpg in Resources */,
+				C9DA04BC1DBEE22B0018FD9A /* cat.jpg in Resources */,
+				C9DA04BB1DBEE22B0018FD9A /* dog.jpg in Resources */,
+				C9DA04BE1DBEE22B0018FD9A /* seal.jpg in Resources */,
 				C924CDD11DBE065D00FA9426 /* april-2560x1440-iphone.jpg in Resources */,
 				04F54B311DBF483E003C6B2D /* Resources.bundle in Resources */,
 				C924CDC51DBDF11F00FA9426 /* LaunchScreen.storyboard in Resources */,
@@ -309,6 +335,8 @@
 			files = (
 				C924CDBD1DBDF11F00FA9426 /* ViewController.swift in Sources */,
 				04BD34AC1DBEEBA700704B4E /* MessageTalkViewController.swift in Sources */,
+				C9DA04C11DBEE78D0018FD9A /* MessageTopViewController.swift in Sources */,
+				C9DA04C51DBF13F40018FD9A /* CustomTableViewCell.swift in Sources */,
 				C924CDBB1DBDF11F00FA9426 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
