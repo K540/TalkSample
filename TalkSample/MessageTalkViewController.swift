@@ -274,4 +274,10 @@ class MessageTalkViewController: JSQMessagesViewController, UINavigationControll
         }
         return nil
     }
+    
+    // ナビゲーションバーを再表示する処理
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = false
+    }
+
 }
