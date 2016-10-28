@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04B123951DC314FC0077FF55 /* CustomTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B123941DC314FC0077FF55 /* CustomTableViewCell2.swift */; };
 		04BD34AC1DBEEBA700704B4E /* MessageTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD34AB1DBEEBA700704B4E /* MessageTalkViewController.swift */; };
+		04D39E901DC1F1D300A1E3D1 /* TaskTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D39E8F1DC1F1D300A1E3D1 /* TaskTopViewController.swift */; };
 		04F54B311DBF483E003C6B2D /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04F54B301DBF483E003C6B2D /* Resources.bundle */; };
 		C924CDBB1DBDF11F00FA9426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924CDBA1DBDF11F00FA9426 /* AppDelegate.swift */; };
 		C924CDBD1DBDF11F00FA9426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924CDBC1DBDF11F00FA9426 /* ViewController.swift */; };
@@ -58,7 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04B123941DC314FC0077FF55 /* CustomTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell2.swift; sourceTree = "<group>"; };
 		04BD34AB1DBEEBA700704B4E /* MessageTalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTalkViewController.swift; sourceTree = "<group>"; };
+		04D39E8F1DC1F1D300A1E3D1 /* TaskTopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTopViewController.swift; sourceTree = "<group>"; };
 		04F54B1B1DBF2D0D003C6B2D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		04F54B301DBF483E003C6B2D /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Resources.bundle; path = TalkSample/Resources.bundle; sourceTree = "<group>"; };
 		2CFF057C2FF344CFECCFBC17 /* Pods_TalkSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +143,9 @@
 				C924CDBC1DBDF11F00FA9426 /* ViewController.swift */,
 				04BD34AB1DBEEBA700704B4E /* MessageTalkViewController.swift */,
 				C9DA04C01DBEE78D0018FD9A /* MessageTopViewController.swift */,
+				04D39E8F1DC1F1D300A1E3D1 /* TaskTopViewController.swift */,
 				C9DA04C41DBF13F40018FD9A /* CustomTableViewCell.swift */,
+				04B123941DC314FC0077FF55 /* CustomTableViewCell2.swift */,
 				C924CDBE1DBDF11F00FA9426 /* Main.storyboard */,
 				C924CDC11DBDF11F00FA9426 /* Assets.xcassets */,
 				C924CDC31DBDF11F00FA9426 /* LaunchScreen.storyboard */,
@@ -333,9 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B123951DC314FC0077FF55 /* CustomTableViewCell2.swift in Sources */,
 				C924CDBD1DBDF11F00FA9426 /* ViewController.swift in Sources */,
 				04BD34AC1DBEEBA700704B4E /* MessageTalkViewController.swift in Sources */,
 				C9DA04C11DBEE78D0018FD9A /* MessageTopViewController.swift in Sources */,
+				04D39E901DC1F1D300A1E3D1 /* TaskTopViewController.swift in Sources */,
 				C9DA04C51DBF13F40018FD9A /* CustomTableViewCell.swift in Sources */,
 				C924CDBB1DBDF11F00FA9426 /* AppDelegate.swift in Sources */,
 			);
