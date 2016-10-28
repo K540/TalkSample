@@ -219,7 +219,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="96" id="weH-TZ-YUM" customClass="GroupCustomTableViewCell" customModule="TalkSample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="96"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="weH-TZ-YUM" id="h37-NP-ryf">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="96"/>
