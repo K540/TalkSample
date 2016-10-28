@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="タスク" id="6uy-4Y-7Wo"/>
+                    <tabBarItem key="tabBarItem" title="タスク" image="task.png" id="6uy-4Y-7Wo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueF-cT-qs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,7 +134,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="お知らせ" id="KuG-4X-a71"/>
+                    <tabBarItem key="tabBarItem" title="お知らせ" image="info.png" id="KuG-4X-a71"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Pc-g2-ioT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,7 +153,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="その他" id="Zx7-c4-tbf"/>
+                    <tabBarItem key="tabBarItem" title="その他" image="other.png" id="Zx7-c4-tbf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IvA-YC-SER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,8 +182,40 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="paQ-kq-DDp">
+                                <rect key="frame" x="0.0" y="521" width="600" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IDg-9u-VZA">
+                                        <rect key="frame" x="100" y="3" width="400" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DT-bN-ugw">
+                                        <rect key="frame" x="508" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="投稿"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0i-cq-lx1">
+                                        <rect key="frame" x="65" y="0.0" width="30" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="＋"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="P0i-cq-lx1" secondAttribute="bottom" constant="3" id="Bd1-eV-IGW"/>
+                                    <constraint firstAttribute="bottom" secondItem="IDg-9u-VZA" secondAttribute="bottom" constant="3" id="JYw-Er-UpG"/>
+                                    <constraint firstItem="IDg-9u-VZA" firstAttribute="leading" secondItem="P0i-cq-lx1" secondAttribute="trailing" constant="5" id="LkL-qx-5xt"/>
+                                    <constraint firstItem="IDg-9u-VZA" firstAttribute="top" secondItem="paQ-kq-DDp" secondAttribute="top" constant="3" id="MBm-vs-bpo"/>
+                                    <constraint firstAttribute="trailing" secondItem="IDg-9u-VZA" secondAttribute="trailing" constant="100" id="PAO-0d-AGo"/>
+                                    <constraint firstItem="IDg-9u-VZA" firstAttribute="leading" secondItem="paQ-kq-DDp" secondAttribute="leading" constant="100" id="XZt-FR-M9p"/>
+                                    <constraint firstItem="P0i-cq-lx1" firstAttribute="top" secondItem="paQ-kq-DDp" secondAttribute="top" id="eQ8-VH-x7M"/>
+                                    <constraint firstItem="0DT-bN-ugw" firstAttribute="top" secondItem="paQ-kq-DDp" secondAttribute="top" id="jDE-VC-6Tt"/>
+                                    <constraint firstItem="0DT-bN-ugw" firstAttribute="leading" secondItem="IDg-9u-VZA" secondAttribute="trailing" constant="8" id="q38-gl-6Jf"/>
+                                    <constraint firstAttribute="height" constant="30" id="xW4-1E-YgA"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eRw-gM-hNf">
-                                <rect key="frame" x="0.0" y="108" width="600" height="443"/>
+                                <rect key="frame" x="0.0" y="108" width="600" height="413"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="96" id="weH-TZ-YUM" customClass="GroupCustomTableViewCell" customModule="TalkSample" customModuleProvider="target">
@@ -269,19 +301,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jqx-mr-4an" firstAttribute="leading" secondItem="Ns8-79-14u" secondAttribute="leading" id="3ra-bA-Yct"/>
+                            <constraint firstItem="paQ-kq-DDp" firstAttribute="top" secondItem="eRw-gM-hNf" secondAttribute="bottom" id="C59-Tp-rns"/>
                             <constraint firstItem="eRw-gM-hNf" firstAttribute="leading" secondItem="Ns8-79-14u" secondAttribute="leading" id="CqL-a1-rkW"/>
                             <constraint firstAttribute="trailing" secondItem="eRw-gM-hNf" secondAttribute="trailing" id="GAo-9b-qBd"/>
                             <constraint firstAttribute="trailing" secondItem="jqx-mr-4an" secondAttribute="trailing" id="Hrw-Dd-vEP"/>
                             <constraint firstItem="jqx-mr-4an" firstAttribute="top" secondItem="uPP-A7-dNK" secondAttribute="bottom" id="QfJ-9c-ve3"/>
                             <constraint firstItem="eRw-gM-hNf" firstAttribute="top" secondItem="jqx-mr-4an" secondAttribute="bottom" id="UYL-XE-093"/>
-                            <constraint firstItem="rZc-uZ-JxF" firstAttribute="top" secondItem="eRw-gM-hNf" secondAttribute="bottom" id="aAq-89-Ctv"/>
+                            <constraint firstAttribute="trailing" secondItem="paQ-kq-DDp" secondAttribute="trailing" id="Vc3-UI-lBh"/>
+                            <constraint firstItem="rZc-uZ-JxF" firstAttribute="top" secondItem="paQ-kq-DDp" secondAttribute="bottom" id="XtK-JT-ENQ"/>
                             <constraint firstItem="eRw-gM-hNf" firstAttribute="leading" secondItem="Ns8-79-14u" secondAttribute="leading" id="f1M-5X-mTV"/>
+                            <constraint firstItem="paQ-kq-DDp" firstAttribute="leading" secondItem="Ns8-79-14u" secondAttribute="leading" id="hjz-Sr-izT"/>
                             <constraint firstItem="eRw-gM-hNf" firstAttribute="top" secondItem="jqx-mr-4an" secondAttribute="bottom" id="tBf-Cd-m54"/>
-                            <constraint firstItem="rZc-uZ-JxF" firstAttribute="top" secondItem="eRw-gM-hNf" secondAttribute="bottom" id="w1O-cP-cYC"/>
                             <constraint firstAttribute="trailing" secondItem="eRw-gM-hNf" secondAttribute="trailing" id="wX6-NN-r7f"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="グループ" image="group.png" id="FOe-lh-xF7"/>
+                    <connections>
+                        <outlet property="inputText" destination="IDg-9u-VZA" id="NQB-I1-eMh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scp-ks-1Li" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -346,6 +383,9 @@
     </scenes>
     <resources>
         <image name="group.png" width="16" height="16"/>
+        <image name="info.png" width="16" height="16"/>
         <image name="message.png" width="16" height="16"/>
+        <image name="other.png" width="16" height="16"/>
+        <image name="task.png" width="16" height="16"/>
     </resources>
 </document>

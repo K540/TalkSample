@@ -9,7 +9,10 @@
 import UIKit
 
 class GroupTopViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
+    // テキスト入力欄
+    @IBOutlet weak var inputText: UITextField!
+
     // 画像のファイル名
     let imageNames = ["icon_user10.png", "icon_user11.png", "icon_user12.png", "icon_user13.png"]
     
@@ -24,8 +27,6 @@ class GroupTopViewController: UIViewController, UITableViewDelegate, UITableView
     
     // 本文
     let postSentence = ["飲み会しましょう！！！", "参加しまーす", "いいですねー＾＾", "私、近場でおすすめのお店あります♪"]
-    
-    // 
     
     override func viewDidLoad() {
         super.viewDidLoad()
