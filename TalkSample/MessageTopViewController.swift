@@ -45,10 +45,10 @@ class MessageTopViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
     
-//    // ナビゲーションバーを非表示にする処理
-//    override func viewWillAppear(animated: Bool) {
-//        self.navigationController?.navigationBarHidden = true
-//    }
+    // ナビゲーションバーを非表示にする処理
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
 
 }
 

@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--メッセージ-->
@@ -18,27 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJ7-EL-avG">
-                                <rect key="frame" x="20" y="20" width="560" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="2qE-UM-fQ8"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Title" id="0ad-cd-Lre">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="7k0-L1-Tpt"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="8WH-Xr-KjJ"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OQ1-gC-gmV">
-                                <rect key="frame" x="20" y="64" width="560" height="492"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OQ1-gC-gmV">
+                                <rect key="frame" x="0.0" y="108" width="600" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" id="Ndb-zs-Sd8" customClass="CustomTableViewCell" customModule="TalkSample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="560" height="60"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ndb-zs-Sd8" id="4V2-lm-lu7">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzj-tp-H7R">
@@ -64,17 +51,28 @@
                                     <outlet property="delegate" destination="3KZ-2X-7DT" id="vNU-r7-Ojn"/>
                                 </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJ7-EL-avG">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2qE-UM-fQ8"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="0ad-cd-Lre">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="7k0-L1-Tpt"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="8WH-Xr-KjJ"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OQ1-gC-gmV" firstAttribute="leading" secondItem="MiJ-qd-iZi" secondAttribute="leadingMargin" id="95Z-zJ-TeX"/>
-                            <constraint firstItem="UJ7-EL-avG" firstAttribute="leading" secondItem="MiJ-qd-iZi" secondAttribute="leadingMargin" id="EKn-nh-awy"/>
+                            <constraint firstItem="OQ1-gC-gmV" firstAttribute="leading" secondItem="MiJ-qd-iZi" secondAttribute="leading" id="95Z-zJ-TeX"/>
+                            <constraint firstItem="UJ7-EL-avG" firstAttribute="leading" secondItem="MiJ-qd-iZi" secondAttribute="leading" id="EKn-nh-awy"/>
                             <constraint firstItem="qli-LZ-U8u" firstAttribute="top" secondItem="OQ1-gC-gmV" secondAttribute="bottom" id="JIz-iE-Nch"/>
                             <constraint firstItem="UJ7-EL-avG" firstAttribute="top" secondItem="QWu-LB-eLi" secondAttribute="bottom" id="O4s-Lm-aEg"/>
-                            <constraint firstItem="OQ1-gC-gmV" firstAttribute="trailing" secondItem="MiJ-qd-iZi" secondAttribute="trailingMargin" id="RgK-Xu-Bef"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UJ7-EL-avG" secondAttribute="trailing" id="ey6-4n-Ops"/>
-                            <constraint firstItem="OQ1-gC-gmV" firstAttribute="trailing" secondItem="MiJ-qd-iZi" secondAttribute="trailingMargin" id="pyB-ya-JbG"/>
+                            <constraint firstItem="OQ1-gC-gmV" firstAttribute="trailing" secondItem="MiJ-qd-iZi" secondAttribute="trailing" id="RgK-Xu-Bef"/>
                             <constraint firstItem="OQ1-gC-gmV" firstAttribute="top" secondItem="UJ7-EL-avG" secondAttribute="bottom" id="vpJ-E3-E6l"/>
+                            <constraint firstItem="UJ7-EL-avG" firstAttribute="trailing" secondItem="MiJ-qd-iZi" secondAttribute="trailing" id="ybz-x7-7oj"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="メッセージ" id="oqc-q0-gOc"/>
