@@ -19,14 +19,14 @@ class CustomTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
     }
     
     /// 画像・タイトル・説明文を設定するメソッド
-    func setCell(imageName: String, titleText: String) {
+    func setCell(_ imageName: String, titleText: String) {
         myImageView.image = UIImage(named: imageName)
         myTitleLabel.text = titleText
      }

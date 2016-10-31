@@ -30,14 +30,14 @@ class MessageTopViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     /// セルの個数を指定するデリゲートメソッド（必須）
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return imageNames.count
     }
     
     /// セルに値を設定するデータソースメソッド（必須）
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得
-        let cell = tableView.dequeueReusableCellWithIdentifier("MyCell") as! CustomTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell") as! CustomTableViewCell
         
         // セルに値を設定
         cell.setCell(imageNames[indexPath.row], titleText: imageTitles[indexPath.row])
@@ -46,8 +46,8 @@ class MessageTopViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     // ナビゲーションバーを非表示にする処理
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = true
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
     }
 
 }
