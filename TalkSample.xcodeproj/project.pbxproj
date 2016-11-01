@@ -233,8 +233,9 @@
 				TargetAttributes = {
 					C924CDB61DBDF11F00FA9426 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 795VV7NCKS;
+						DevelopmentTeam = ZAX5TR5JU3;
 						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -500,6 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZAX5TR5JU3;
 				INFOPLIST_FILE = TalkSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.TalkSample;
@@ -515,6 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZAX5TR5JU3;
 				INFOPLIST_FILE = TalkSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.TalkSample;
