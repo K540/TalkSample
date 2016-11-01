@@ -27,14 +27,14 @@ class CustomTableViewCell2: UITableViewCell {
         // Initialization code
     }
     
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
     }
     
     /// セル内オブジェクト設定
-    func setCell(status: String,
+    func setCell(_ status: String,
                  name: String,
                  team: String,
                  title: String,

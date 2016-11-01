@@ -21,7 +21,7 @@ class TaskTopViewController: UIViewController, UITableViewDelegate, UITableViewD
                           "期限切れ"]
     // Name
     let txtNameArray = ["田中 佐羽雄",
-                        "酒井　渉",
+                        "利田　粗太",
                         "江良　火流斗",
                         "倉井　安人",
                         "出財瀬　圭子",
@@ -67,7 +67,7 @@ class TaskTopViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     // [UIViewController]
     // 画面表示前処理
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         // ナビゲーションバーを非表示
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
@@ -83,17 +83,17 @@ class TaskTopViewController: UIViewController, UITableViewDelegate, UITableViewD
     // Class Methods.
     //-----------------------------------------------
     /// セルの個数を指定するデリゲートメソッド（必須）
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return imgIconArray.count
     }
 
     /// セルに値を設定するデータソースメソッド（必須）
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! CustomTableViewCell2
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CustomTableViewCell2
         
         // セルに値を設定
-        let resData:NSData? = getResourceImage(imgIconArray[indexPath.row])
+        let resData:Data? = getResourceImage(imgIconArray[indexPath.row])
         var resImage:UIImage?
         if nil != resData {
             resImage = UIImage(data: resData!)
@@ -110,7 +110,7 @@ class TaskTopViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
 
     // ステータス文言を取得
-    func getStatus(index:Int) -> String {
+    func getStatus(_ index:Int) -> String {
         var ret:String = ""
 
         // 指定セルの期日を取得
@@ -130,14 +130,14 @@ class TaskTopViewController: UIViewController, UITableViewDelegate, UITableViewD
     /// 日時文字列をNSDate型へ変換
     ///  - parameter timeStr: 日時文字列(yyyy/MM/DD HH:MM:SS)
     ///  - returns: 引数に指定した日時のNSDate
-    func getNSDateFromString(timeStr:String?) -> NSDate? {
-        var retDate:NSDate?
+    func getNSDateFromString(_ timeStr:String?) -> Date? {
+        var retDate:Date?
 
         // 所定フォーマットの日時文字列からNSDataを作成
         if nil != timeStr {
-            let formatter = NSDateFormatter()
+            let formatter = DateFormatter()
             formatter.dateFormat = "yyyy/MM/DD HH:MM:SS"
-            retDate = formatter.dateFromString(timeStr!)
+            retDate = formatter.date(from: timeStr!)
         }
 
         return retDate
@@ -148,14 +148,14 @@ class TaskTopViewController: UIViewController, UITableViewDelegate, UITableViewD
     ///  - parameter date: 日時を格納したNSDateオブジェクト
     ///  - parameter format: 指定フォーマット
     ///  - returns: 引数に指定した日時の文字列
-    func getStringFromNSDate(date:NSDate?, format:String) -> String {
+    func getStringFromNSDate(_ date:Date?, format:String) -> String {
         var retStr:String = ""
 
         // 引数に指定されたフォーマットの日時文言を作成
         if nil != date {
-            let formatter = NSDateFormatter()
+            let formatter = DateFormatter()
             formatter.dateFormat = format
-            retStr = formatter.stringFromDate(date!)
+            retStr = formatter.string(from: date!)
         }
 
         return retStr
@@ -165,12 +165,12 @@ class TaskTopViewController: UIViewController, UITableViewDelegate, UITableViewD
     /// リソース内からpng画像を取り出し、NSData形式で返却する
     /// - parameter name : 画像の名前(パス)。拡張子[png]は省略。
     /// - returns : NSData形式のpng画像 存在しなければnilを返す。
-    func getResourceImage(name:String)-> NSData?{
-        let bundlePath : String = NSBundle.mainBundle().pathForResource("Resources", ofType: "bundle")!
-        let bundle : NSBundle = NSBundle(path: bundlePath)!
-        if let imagePath : String = bundle.pathForResource(name, ofType: "png"){
-            let fileHandle : NSFileHandle = NSFileHandle(forReadingAtPath: imagePath)!
-            let imageData : NSData = fileHandle.readDataToEndOfFile()
+    func getResourceImage(_ name:String)-> Data?{
+        let bundlePath : String = Bundle.main.path(forResource: "Resources", ofType: "bundle")!
+        let bundle : Bundle = Bundle(path: bundlePath)!
+        if let imagePath : String = bundle.path(forResource: name, ofType: "png"){
+            let fileHandle : FileHandle = FileHandle(forReadingAtPath: imagePath)!
+            let imageData : Data = fileHandle.readDataToEndOfFile()
             return imageData
         }
         return nil

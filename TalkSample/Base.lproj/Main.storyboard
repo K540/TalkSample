@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--メッセージ-->
@@ -22,7 +23,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" id="Ndb-zs-Sd8" customClass="CustomTableViewCell" customModule="TalkSample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="60"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ndb-zs-Sd8" id="4V2-lm-lu7">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
@@ -110,10 +111,10 @@
                         <viewControllerLayoutGuide type="bottom" id="Fbd-mL-9mw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="o5y-fG-fUX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="139" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wAo-9y-jR9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="139" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wAo-9y-jR9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -149,8 +150,8 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Deadline date and time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm0-CO-IPV" userLabel="txtTime">
-                                                    <rect key="frame" x="13" y="108" width="479" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deadline date and time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm0-CO-IPV" userLabel="txtTime">
+                                                    <rect key="frame" x="13" y="109" width="479" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.54452592134475708" green="0.55385452508926392" blue="0.61499214172363281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -207,10 +208,11 @@
                             <constraint firstItem="Fbd-mL-9mw" firstAttribute="top" secondItem="wAo-9y-jR9" secondAttribute="bottom" id="9Hd-5A-x9r"/>
                             <constraint firstItem="wAo-9y-jR9" firstAttribute="leading" secondItem="o5y-fG-fUX" secondAttribute="leading" id="EFt-qP-2Vm"/>
                             <constraint firstItem="wAo-9y-jR9" firstAttribute="centerX" secondItem="o5y-fG-fUX" secondAttribute="centerX" id="EMn-V7-TsG"/>
-                            <constraint firstItem="wAo-9y-jR9" firstAttribute="top" secondItem="o5y-fG-fUX" secondAttribute="topMargin" id="KtT-R8-Bh8"/>
+                            <constraint firstItem="wAo-9y-jR9" firstAttribute="top" secondItem="o5y-fG-fUX" secondAttribute="top" id="KtT-R8-Bh8"/>
                             <constraint firstAttribute="trailing" secondItem="wAo-9y-jR9" secondAttribute="trailing" id="SKr-Rj-QSG"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="タスク" id="6uy-4Y-7Wo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueF-cT-qs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
