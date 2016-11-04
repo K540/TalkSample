@@ -17,6 +17,7 @@
 		C924CDCF1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C924CDCE1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg */; };
 		C924CDD11DBE065D00FA9426 /* april-2560x1440-iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C924CDD01DBE065D00FA9426 /* april-2560x1440-iphone.jpg */; };
 		C9C4E8D01DC1FBC100C122B8 /* GroupTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4E8CF1DC1FBC100C122B8 /* GroupTopViewController.swift */; };
+		C9D6D9951DCC17F400B4A603 /* icon_user99.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D6D9941DCC17F400B4A603 /* icon_user99.png */; };
 		C9DA04BB1DBEE22B0018FD9A /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04B61DBEE22B0018FD9A /* dog.jpg */; };
 		C9DA04BC1DBEE22B0018FD9A /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04B71DBEE22B0018FD9A /* cat.jpg */; };
 		C9DA04BD1DBEE22B0018FD9A /* piyo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04B81DBEE22B0018FD9A /* piyo.jpg */; };
@@ -85,6 +86,7 @@
 		C924CDCE1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper_iPhone_001.jpg; sourceTree = "<group>"; };
 		C924CDD01DBE065D00FA9426 /* april-2560x1440-iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "april-2560x1440-iphone.jpg"; sourceTree = "<group>"; };
 		C9C4E8CF1DC1FBC100C122B8 /* GroupTopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTopViewController.swift; sourceTree = "<group>"; };
+		C9D6D9941DCC17F400B4A603 /* icon_user99.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user99.png; path = Resources/icon_user99.png; sourceTree = "<group>"; };
 		C9DA04B61DBEE22B0018FD9A /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 		C9DA04B71DBEE22B0018FD9A /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		C9DA04B81DBEE22B0018FD9A /* piyo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piyo.jpg; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				C9FD7BBA1DC350A5003E9640 /* icon_user11.png */,
 				C9FD7BBB1DC350A5003E9640 /* icon_user12.png */,
 				C9FD7BBC1DC350A5003E9640 /* icon_user13.png */,
+				C9D6D9941DCC17F400B4A603 /* icon_user99.png */,
 			);
 			path = TalkSample;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				C9DA04BD1DBEE22B0018FD9A /* piyo.jpg in Resources */,
 				C9DA04BF1DBEE22B0018FD9A /* squirrel.jpg in Resources */,
 				C9FD7BBD1DC350A5003E9640 /* icon_user10.png in Resources */,
+				C9D6D9951DCC17F400B4A603 /* icon_user99.png in Resources */,
 				C9DA04BC1DBEE22B0018FD9A /* cat.jpg in Resources */,
 				C9DA04BB1DBEE22B0018FD9A /* dog.jpg in Resources */,
 				C9DA04BE1DBEE22B0018FD9A /* seal.jpg in Resources */,

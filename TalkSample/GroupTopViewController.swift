@@ -10,27 +10,48 @@ import UIKit
 
 class GroupTopViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 
-    // テキスト入力欄
     @IBOutlet weak var myTextView: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var myTableView: UITableView!
 
+    // 投稿ボタン押下時の処理
+    @IBAction func touchUpPostButton(_ sender: UIButton!) {
+        
+        //各配列に直接追加
+        imageNames.append("icon_user99.png")
+        imageTitles.append("伊藤")
+        imageSubTitles.append("人事部")
+        
+        let date = NSDate() // 現在の標準時刻を取得 2016-11-04 14:47:34 +0000
+        let format = DateFormatter()
+        format.dateFormat = "yyyy/MM/dd HH:mm" // フォーマット変更
+        let strDate = format.string(from: date as Date) // 2016/11/04 14:47
+        
+        postTime.append(strDate)
+        postSentence.append("飛び入り参加ーーーーー！！！")
+
+        print("touchPostButton\n")
+        
+        self.myTableView.reloadData()  // TableView更新
+    }
+    
     // 現在アクティブ(編集中)のTextField
     var activeField: UITextField!
 
     // 画像のファイル名
-    let imageNames = ["icon_user10.png", "icon_user11.png", "icon_user12.png", "icon_user13.png"]
+    var imageNames = ["icon_user10.png", "icon_user11.png", "icon_user12.png", "icon_user13.png"]
     
     // 画像のタイトル
-    let imageTitles = ["佐藤", "鈴木", "高橋", "田中"]
+    var imageTitles = ["佐藤", "鈴木", "高橋", "田中"]
 
     // 投稿者の所属
-    let imageSubTitles = ["開発部", "開発部", "営業部", "管理部"]
+    var imageSubTitles = ["開発部", "開発部", "営業部", "管理部"]
     
     // 投稿時間
-    let postTime = ["2016/10/28 10:10", "2016/10/28 12:01", "2016/10/28 12:30", "2016/10/28 14:50"]
+    var postTime = ["2016/10/28 10:10", "2016/10/28 12:01", "2016/10/28 12:30", "2016/10/28 14:50"]
     
     // 本文
-    let postSentence = ["飲み会しましょう！！！", "参加しまーす", "いいですねー＾＾", "私、近場でおすすめのお店あります♪"]
+    var postSentence = ["飲み会しましょう！！！", "参加しまーす", "いいですねー＾＾", "私、近場でおすすめのお店あります♪"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,18 +60,15 @@ class GroupTopViewController: UIViewController, UITableViewDelegate, UITableView
         // 仮のサイズでツールバー生成
         let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
         kbToolBar.barStyle = UIBarStyle.default  // スタイルを設定
-        
         kbToolBar.sizeToFit()  // 画面幅に合わせてサイズを変更
         
         // スペーサー
         let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil)
         
         // 閉じるボタン
-        let commitButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: "commitButtonTapped")
-        
+        let commitButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(GroupTopViewController.commitButtonTapped))
         
         kbToolBar.items = [spacer, commitButton]
-        
         
         myTextView.inputAccessoryView = kbToolBar
         myTextView.delegate = self;
@@ -59,8 +77,6 @@ class GroupTopViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     override func didReceiveMemoryWarning() {
-        
-        
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -86,8 +102,9 @@ class GroupTopViewController: UIViewController, UITableViewDelegate, UITableView
         self.navigationController?.isNavigationBarHidden = true
     }
     
-    // ボタンが押された時に呼ばれるアクション
+    // Doneボタンが押された時に呼ばれるアクション
     func commitButtonTapped() {
+        print("commitButtonTapped\n")
         self.view.endEditing(true)
     }
     
@@ -136,6 +153,7 @@ class GroupTopViewController: UIViewController, UITableViewDelegate, UITableView
     
     // Called when the UIKeyboardWillHideNotification is sent
     func keyboardWillBeHidden(_ aNotification: NSNotification) {
+        print("keyboardWillBeHidden\n")
         let contentInsets: UIEdgeInsets = UIEdgeInsets.zero
         self.scrollView.contentInset = contentInsets;
         self.scrollView.scrollIndicatorInsets = contentInsets;
@@ -147,6 +165,7 @@ class GroupTopViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        print("textFieldDidEndEditing\n")
         activeField = nil;
     }
 }
