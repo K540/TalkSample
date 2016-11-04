@@ -18,6 +18,8 @@
 		C924CDC51DBDF11F00FA9426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C924CDC31DBDF11F00FA9426 /* LaunchScreen.storyboard */; };
 		C924CDCF1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C924CDCE1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg */; };
 		C924CDD11DBE065D00FA9426 /* april-2560x1440-iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C924CDD01DBE065D00FA9426 /* april-2560x1440-iphone.jpg */; };
+		C9C4E8D01DC1FBC100C122B8 /* GroupTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C4E8CF1DC1FBC100C122B8 /* GroupTopViewController.swift */; };
+		C9D6D9951DCC17F400B4A603 /* icon_user99.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D6D9941DCC17F400B4A603 /* icon_user99.png */; };
 		C9DA04BB1DBEE22B0018FD9A /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04B61DBEE22B0018FD9A /* dog.jpg */; };
 		C9DA04BC1DBEE22B0018FD9A /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04B71DBEE22B0018FD9A /* cat.jpg */; };
 		C9DA04BD1DBEE22B0018FD9A /* piyo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04B81DBEE22B0018FD9A /* piyo.jpg */; };
@@ -25,6 +27,16 @@
 		C9DA04BF1DBEE22B0018FD9A /* squirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9DA04BA1DBEE22B0018FD9A /* squirrel.jpg */; };
 		C9DA04C11DBEE78D0018FD9A /* MessageTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA04C01DBEE78D0018FD9A /* MessageTopViewController.swift */; };
 		C9DA04C51DBF13F40018FD9A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA04C41DBF13F40018FD9A /* CustomTableViewCell.swift */; };
+		C9FD7B331DC2E9AF003E9640 /* GroupCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD7B321DC2E9AF003E9640 /* GroupCustomTableViewCell.swift */; };
+		C9FD7BA81DC349C2003E9640 /* group.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FD7B9F1DC349C2003E9640 /* group.png */; };
+		C9FD7BAD1DC349C2003E9640 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FD7BA41DC349C2003E9640 /* info.png */; };
+		C9FD7BAE1DC349C2003E9640 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FD7BA51DC349C2003E9640 /* message.png */; };
+		C9FD7BAF1DC349C2003E9640 /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FD7BA61DC349C2003E9640 /* other.png */; };
+		C9FD7BB01DC349C2003E9640 /* task.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FD7BA71DC349C2003E9640 /* task.png */; };
+		C9FD7BBD1DC350A5003E9640 /* icon_user10.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FD7BB91DC350A5003E9640 /* icon_user10.png */; };
+		C9FD7BBE1DC350A5003E9640 /* icon_user11.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FD7BBA1DC350A5003E9640 /* icon_user11.png */; };
+		C9FD7BBF1DC350A5003E9640 /* icon_user12.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FD7BBB1DC350A5003E9640 /* icon_user12.png */; };
+		C9FD7BC01DC350A5003E9640 /* icon_user13.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FD7BBC1DC350A5003E9640 /* icon_user13.png */; };
 		CCDC9EEE0B7A107A33231247 /* Pods_TalkSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFF057C2FF344CFECCFBC17 /* Pods_TalkSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +89,8 @@
 		C924CDC61DBDF11F00FA9426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C924CDCE1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper_iPhone_001.jpg; sourceTree = "<group>"; };
 		C924CDD01DBE065D00FA9426 /* april-2560x1440-iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "april-2560x1440-iphone.jpg"; sourceTree = "<group>"; };
+		C9C4E8CF1DC1FBC100C122B8 /* GroupTopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTopViewController.swift; sourceTree = "<group>"; };
+		C9D6D9941DCC17F400B4A603 /* icon_user99.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user99.png; path = Resources/icon_user99.png; sourceTree = "<group>"; };
 		C9DA04B61DBEE22B0018FD9A /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 		C9DA04B71DBEE22B0018FD9A /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		C9DA04B81DBEE22B0018FD9A /* piyo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piyo.jpg; sourceTree = "<group>"; };
@@ -84,6 +98,16 @@
 		C9DA04BA1DBEE22B0018FD9A /* squirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = squirrel.jpg; sourceTree = "<group>"; };
 		C9DA04C01DBEE78D0018FD9A /* MessageTopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTopViewController.swift; sourceTree = "<group>"; };
 		C9DA04C41DBF13F40018FD9A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		C9FD7B321DC2E9AF003E9640 /* GroupCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCustomTableViewCell.swift; sourceTree = "<group>"; };
+		C9FD7B9F1DC349C2003E9640 /* group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = group.png; path = Resources/group.png; sourceTree = "<group>"; };
+		C9FD7BA41DC349C2003E9640 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = Resources/info.png; sourceTree = "<group>"; };
+		C9FD7BA51DC349C2003E9640 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = message.png; path = Resources/message.png; sourceTree = "<group>"; };
+		C9FD7BA61DC349C2003E9640 /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = other.png; path = Resources/other.png; sourceTree = "<group>"; };
+		C9FD7BA71DC349C2003E9640 /* task.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = task.png; path = Resources/task.png; sourceTree = "<group>"; };
+		C9FD7BB91DC350A5003E9640 /* icon_user10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user10.png; path = Resources/icon_user10.png; sourceTree = "<group>"; };
+		C9FD7BBA1DC350A5003E9640 /* icon_user11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user11.png; path = Resources/icon_user11.png; sourceTree = "<group>"; };
+		C9FD7BBB1DC350A5003E9640 /* icon_user12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user12.png; path = Resources/icon_user12.png; sourceTree = "<group>"; };
+		C9FD7BBC1DC350A5003E9640 /* icon_user13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user13.png; path = Resources/icon_user13.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +165,8 @@
 			children = (
 				C924CDBA1DBDF11F00FA9426 /* AppDelegate.swift */,
 				C924CDBC1DBDF11F00FA9426 /* ViewController.swift */,
+				C9C4E8CF1DC1FBC100C122B8 /* GroupTopViewController.swift */,
+				C9FD7B321DC2E9AF003E9640 /* GroupCustomTableViewCell.swift */,
 				04BD34AB1DBEEBA700704B4E /* MessageTalkViewController.swift */,
 				C9DA04C01DBEE78D0018FD9A /* MessageTopViewController.swift */,
 				04D39E8F1DC1F1D300A1E3D1 /* TaskTopViewController.swift */,
@@ -157,6 +183,16 @@
 				C9DA04B81DBEE22B0018FD9A /* piyo.jpg */,
 				C9DA04B91DBEE22B0018FD9A /* seal.jpg */,
 				C9DA04BA1DBEE22B0018FD9A /* squirrel.jpg */,
+				C9FD7B9F1DC349C2003E9640 /* group.png */,
+				C9FD7BA41DC349C2003E9640 /* info.png */,
+				C9FD7BA51DC349C2003E9640 /* message.png */,
+				C9FD7BA61DC349C2003E9640 /* other.png */,
+				C9FD7BA71DC349C2003E9640 /* task.png */,
+				C9FD7BB91DC350A5003E9640 /* icon_user10.png */,
+				C9FD7BBA1DC350A5003E9640 /* icon_user11.png */,
+				C9FD7BBB1DC350A5003E9640 /* icon_user12.png */,
+				C9FD7BBC1DC350A5003E9640 /* icon_user13.png */,
+				C9D6D9941DCC17F400B4A603 /* icon_user99.png */,
 			);
 			path = TalkSample;
 			sourceTree = "<group>";
@@ -206,8 +242,9 @@
 				TargetAttributes = {
 					C924CDB61DBDF11F00FA9426 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 795VV7NCKS;
+						DevelopmentTeam = ZAX5TR5JU3;
 						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -273,15 +310,25 @@
 			files = (
 				C9DA04BD1DBEE22B0018FD9A /* piyo.jpg in Resources */,
 				C9DA04BF1DBEE22B0018FD9A /* squirrel.jpg in Resources */,
+				C9FD7BBD1DC350A5003E9640 /* icon_user10.png in Resources */,
+				C9D6D9951DCC17F400B4A603 /* icon_user99.png in Resources */,
 				C9DA04BC1DBEE22B0018FD9A /* cat.jpg in Resources */,
 				C9DA04BB1DBEE22B0018FD9A /* dog.jpg in Resources */,
 				C9DA04BE1DBEE22B0018FD9A /* seal.jpg in Resources */,
+				C9FD7BB01DC349C2003E9640 /* task.png in Resources */,
+				C9FD7BAD1DC349C2003E9640 /* info.png in Resources */,
 				C924CDD11DBE065D00FA9426 /* april-2560x1440-iphone.jpg in Resources */,
 				04F54B311DBF483E003C6B2D /* Resources.bundle in Resources */,
 				C924CDC51DBDF11F00FA9426 /* LaunchScreen.storyboard in Resources */,
 				C924CDCF1DBE02C400FA9426 /* wallpaper_iPhone_001.jpg in Resources */,
+				C9FD7BA81DC349C2003E9640 /* group.png in Resources */,
+				C9FD7BC01DC350A5003E9640 /* icon_user13.png in Resources */,
 				C924CDC21DBDF11F00FA9426 /* Assets.xcassets in Resources */,
+				C9FD7BBF1DC350A5003E9640 /* icon_user12.png in Resources */,
+				C9FD7BAF1DC349C2003E9640 /* other.png in Resources */,
+				C9FD7BBE1DC350A5003E9640 /* icon_user11.png in Resources */,
 				C924CDC01DBDF11F00FA9426 /* Main.storyboard in Resources */,
+				C9FD7BAE1DC349C2003E9640 /* message.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,11 +387,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C4E8D01DC1FBC100C122B8 /* GroupTopViewController.swift in Sources */,
 				04B123951DC314FC0077FF55 /* CustomTableViewCell2.swift in Sources */,
 				C924CDBD1DBDF11F00FA9426 /* ViewController.swift in Sources */,
 				04BD34AC1DBEEBA700704B4E /* MessageTalkViewController.swift in Sources */,
 				C9DA04C11DBEE78D0018FD9A /* MessageTopViewController.swift in Sources */,
 				04D39E901DC1F1D300A1E3D1 /* TaskTopViewController.swift in Sources */,
+				C9FD7B331DC2E9AF003E9640 /* GroupCustomTableViewCell.swift in Sources */,
 				C9DA04C51DBF13F40018FD9A /* CustomTableViewCell.swift in Sources */,
 				C924CDBB1DBDF11F00FA9426 /* AppDelegate.swift in Sources */,
 			);
@@ -463,6 +512,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZAX5TR5JU3;
 				INFOPLIST_FILE = TalkSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.TalkSample;
@@ -477,6 +528,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZAX5TR5JU3;
 				INFOPLIST_FILE = TalkSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.TalkSample;
